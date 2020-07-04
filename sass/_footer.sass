@@ -1,0 +1,51 @@
+footer
+	min-height: 248px
+.footer
+	&_divider
+		width: 100%
+		height: 2px
+		background-color: #000000
+		margin-bottom: 34px
+		&_animated
+			animation-name: lineappearance
+			animation-duration: 4s
+			animation-delay: 1s
+	&_block_items
+		min-height: 180px
+		background-color: #777777
+		padding: 18px 24px 0;
+		display: flex
+	&_item
+		width: calc(100% / 2)
+		list-style-type: none
+		padding: 0
+		margin: 0
+		color: #fff
+	&_block_points
+		min-height: 180px
+		background-color: #777777
+	&_point
+		list-style-type: square
+		margin: 0
+		padding: 18px 18px 0 35px
+		color: #ffffff
+	&_block_column
+		min-height: 180px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&_column
+		height: 75px
+		background-color: #777777
+		&::before 
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 0
+			height: 100%;
+			background: rgba(255,255,255,0.3)
+			transition: all 2s ease
+		&:hover::before
+			width: 100%
+			cursor: pointer
